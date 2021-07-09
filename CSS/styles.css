@@ -10,6 +10,15 @@ input[type="radio" i] {
   opacity: 0;
 }
 
+fieldset {
+  border: 0;
+  margin-right: 12px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
 
 /* GENERAL DIV PROPERTIES */
 
@@ -43,15 +52,6 @@ input[type="radio" i] {
   margin: auto;
 }
 
-.toggle-cont {
-  display: grid;
-}
-
-.button-cont {
-  padding: 5px;
-  border-radius: 10px;
-}
-
 .right-cont {
   display: flex;
   font-size: 0.7rem;
@@ -64,11 +64,50 @@ input[type="radio" i] {
   right: 18px;
 }
 
+.toggle-cont {
+  display: grid;
+}
+
+.toggle-text {
+  margin-top: 15%;
+  margin-right: 15%;
+}
+
+.sub-rightcont {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+}
+
+.checkbox-cont {
+  position: relative;
+  top: 9px;
+  display: flex;
+}
+
+.checkbox label {
+  display: block;
+}
+
 .check {
-  display: inline;
   overflow: hidden;
   border-radius: 9px;
   opacity: 0;
+}
+
+.button-cont {
+  position: relative;
+  bottom: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 15px;
+  width: 90%;
+  z-index: -1;
 }
 
 .visible {
