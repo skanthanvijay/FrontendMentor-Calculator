@@ -14,12 +14,13 @@ input[type="radio" i] {
 /* GENERAL DIV PROPERTIES */
 
 .calculator {
-  position: fixed;
+  display: grid;
   width: 400px;
   height: 550px;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-content: center;
+  padding: 3% 0;
+  margin: auto;
 }
 
 .section-div {
@@ -282,7 +283,7 @@ background-color: hsl(0, 0%, 90%);
 
   .calculator {
     width: 300px;
-    top: 46%;
+    padding: 10% 0;
   }
 
   .calc-body-container {
