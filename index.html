@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+
+<body class="bodytheme1">
+
+  <div class="calculator">
+
+    <!-- CALCULATOR HEADING -->
+    <div class="calc-heading calc-text1-t1 section-div">
+
+      <div class="container" style="margin-left: 5px;"><h2>calc</h2></div>
+
+      <div class="right-cont">
+      <p>THEME</p>
+      <div class="toggle-cont">
+        <div class="container">1ㅤ2ㅤ3</div>
+        <div class="container button-cont calc-cont-t1">
+          <div class="check t1 visible"><input type="radio" name="toggle"></div>
+          <div class="check t2"><input type="radio" name="toggle"></div>
+          <div class="check t3"><input type="radio" name="toggle"></div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+
+    <!-- CALCULATOR SCREEN -->
+    <div class="calc-screen-container calc-text1-t1 calcS-cont-t1 section-div">
+      <div class="calc-screen">
+        0
+      </div>
+    </div>
+
+
+    <!-- CALCULATOR BODY -->
+    <div class="calc-body-container calc-cont-t1 section-div">
+
+      <button class="calc-button cB-t1 numpad">7</button>
+
+      <button class="calc-button cB-t1 numpad">8</button>
+
+      <button class="calc-button cB-t1 numpad">9</button>
+
+      <button class="worded-button wB-t1 calc-text1-t1 delete">DEL</button>
+
+      <button class="calc-button cB-t1 numpad">4</button>
+
+      <button class="calc-button cB-t1 numpad">5</button>
+
+      <button class="calc-button cB-t1 numpad">6</button>
+
+      <button class="calc-button cB-t1 operator">+</button>
+
+      <button class="calc-button cB-t1 numpad">1</button>
+
+      <button class="calc-button cB-t1 numpad">2</button>
+
+      <button class="calc-button cB-t1 numpad">3</button>
+
+      <button class="calc-button cB-t1 operator">-</button>
+
+      <button class="calc-button cB-t1 numpad">.</button>
+
+      <button class="calc-button cB-t1 numpad">0</button>
+
+      <button class="calc-button cB-t1 operator">/</button>
+
+      <button class="calc-button cB-t1 operator">x</button>
+
+      <button class="bottom worded-button wB-t1 calc-text1-t1 reset">RESET</button>
+
+      <button class="bottom worded-button equals e1">=</button>
+
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Skanthan</a>.
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="JS/calculator.js"></script>
+    <script type="text/javascript" src="JS/theme.js"></script>
+
+</body>
+
+</html>

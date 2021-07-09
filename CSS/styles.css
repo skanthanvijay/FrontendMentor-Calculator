@@ -1,0 +1,309 @@
+/* GENERAL ELEMENTS */
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+
+input[type="radio" i] {
+  margin: 0;
+  opacity: 0;
+}
+
+
+/* GENERAL DIV PROPERTIES */
+
+.calculator {
+  position: fixed;
+  width: 400px;
+  height: 550px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-div {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+  width: 100%;
+}
+
+
+/* CALCULATOR HEADING */
+.calc-heading {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.container {
+  display: inline;
+  margin: auto;
+}
+
+.toggle-cont {
+  display: grid;
+}
+
+.button-cont {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.right-cont {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+}
+
+.right-cont p {
+  position: relative;
+  top: 10px;
+  right: 18px;
+}
+
+.check {
+  display: inline;
+  overflow: hidden;
+  border-radius: 9px;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+/* CALCULATOR SCREEN */
+
+.calc-screen-container {
+  text-align: right;
+  height: 100px;
+}
+
+.calc-screen {
+  font-size: 2.5rem;
+  margin: 25px 30px;
+}
+
+
+/* CALCULATOR BODY */
+.calc-body-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 4%;
+  width: 92%;
+  height: 350px;
+}
+
+.calc-button {
+  overflow: hidden;
+  border-radius: 10px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-width: 3px;
+}
+
+.calc-button:active {
+  position: relative;
+  border-bottom-style: hidden;
+  height: 78%;
+  top: 1%;
+}
+
+.bottom {
+  grid-column: span 2;
+}
+
+.worded-button {
+  overflow: hidden;
+  border-radius: 10px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-width: 3px;
+  font-size: 1rem;
+}
+
+.worded-button:active {
+  position: relative;
+  border-bottom-style: hidden;
+  height: 78%;
+  top: 1%;
+}
+
+.equals {}
+
+
+/* THEMES */
+
+/*Toggle*/
+.t1 {
+  background-color: hsl(6, 63%, 50%);
+}
+
+.t2 {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.t3 {
+  background-color: hsl(176, 100%, 44%);
+}
+
+/*Background Color*/
+.bodytheme1 {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.bodytheme2 {
+background-color: hsl(0, 0%, 90%);
+}
+
+.bodytheme3 {
+  background-color: hsl(268, 75%, 9%);
+}
+
+/*Text Color*/
+.calc-text1-t1 {
+  color: white;
+}
+
+.calc-text1-t2 {
+  color: hsl(60, 10%, 19%);
+}
+
+.calc-text1-t3 {
+  color: hsl(52, 100%, 62%);
+}
+
+.calc-text2-t1 {
+  color: hsl(221, 14%, 31%);
+}
+
+.calc-text3-t3 {
+  color: hsl(198, 20%, 13%);
+}
+
+/*Container Theming*/
+.calc-cont-t1 {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.calc-cont-t2 {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.calc-cont-t3 {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.calcS-cont-t1 {
+  background-color: hsl(224, 36%, 15%);
+}
+
+.calcS-cont-t2 {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(0, 0%, 93%);
+}
+
+/*Button Theming 1*/
+.cB-t1 {
+  background-color: hsl(30, 25%, 89%);
+  border-color: hsl(28, 16%, 65%);
+  color: hsl(223, 31%, 20%);
+}
+
+.cB-t2 {
+  background-color: hsl(45, 7%, 89%);
+  border-color: hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+.cB-t3 {
+  background-color: hsl(268, 47%, 21%);
+  border-color: hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+/*Button Theming 2*/
+.wB-t1 {
+  background-color: hsl(225, 21%, 49%);
+  border-color: hsl(224, 28%, 35%);
+}
+
+.wB-t2 {
+  background-color: hsl(185, 42%, 37%);
+  border-color: hsl(185, 58%, 25%);
+}
+
+.wB-t3 {
+  color: white;
+  background-color: hsl(281, 89%, 26%);
+  border-color: hsl(285, 91%, 52%);
+}
+
+/*Button Theming 3*/
+.e1 {
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+  border-color: hsl(6, 70%, 34%);
+}
+
+.e2 {
+  color: white;
+  background-color: hsl(25, 98%, 40%);
+  border-color: hsl(25, 99%, 27%);
+}
+
+.e3 {
+  color: hsl(198, 20%, 13%);
+  background-color: hsl(176, 100%, 44%);
+  border-color: hsl(177, 92%, 70%);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) {
+
+  .calculator {
+    width: 300px;
+    margin: 40px 0;
+  }
+
+  .calc-body-container {
+    grid-gap: 8px;
+  }
+
+  .calc-button {
+    height: 95%;
+  }
+
+  .calc-button:active {
+    height: 92.5%;
+    top: 2.5%;
+  }
+
+  .worded-button {
+    height: 95%;
+  }
+
+  .worded-button:active {
+    height: 92.5%;
+    top: 2.5%
+  }
+
+}
