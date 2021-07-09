@@ -36,18 +36,37 @@
     <!-- CALCULATOR HEADING -->
     <div class="calc-heading calc-text1-t1 section-div">
 
-      <div class="container" style="margin-left: 5px;"><h2>calc</h2></div>
+      <div class="container" style="margin-left: 5px;">
+        <h2>calc</h2>
+      </div>
 
       <div class="right-cont">
-      <p>THEME</p>
-      <div class="toggle-cont">
-        <div class="container">1ㅤ2ㅤ3</div>
-        <div class="container button-cont calc-cont-t1">
-          <div class="check t1 visible"><input type="radio" name="toggle"></div>
-          <div class="check t2"><input type="radio" name="toggle"></div>
-          <div class="check t3"><input type="radio" name="toggle"></div>
-        </div>
-      </div>
+
+        <fieldset>
+
+          <div class="sub-rightcont">
+            <legend class="toggle-text">THEME</legend>
+
+            <div class="toggle-cont">
+              <div class="checkbox-cont">
+                <div class="checkbox">
+                  <label for="t1">1</label>
+                  <div class="check t1 visible"><input type="radio" name="toggle" id="t1"></div>
+                </div>
+                <div class="checkbox">
+                  <label for="t2">2</label>
+                  <div class="check t2"><input type="radio" name="toggle" id="t2"></div>
+                </div>
+                <div class="checkbox">
+                  <label for="t3">3</label>
+                  <div class="check t3"><input type="radio" name="toggle" id="t3"></div>
+                </div>
+              </div>
+              <div class="button-cont calc-cont-t1"></div>
+            </div>
+          </div>
+        </fieldset>
+
       </div>
 
     </div>
