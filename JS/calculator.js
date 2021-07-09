@@ -73,24 +73,29 @@ output.addEventListener("click", function() {
 
   var num2 = Number(document.querySelector(".calc-screen").innerText);
   var numAnswer = 0;
+  var numAnswerRaw = 0;
 
   if (operation === "+") {
-    numAnswer = num1 + num2;
+    numAnswerRaw = num1 + num2;
+    numAnswer = numAnswerRaw.toFixed(6);
     document.querySelector(".calc-screen").innerText = numAnswer;
   }
 
   else if (operation === "-") {
-    numAnswer = num1 - num2;
+    numAnswerRaw = num1 - num2;
+    numAnswer = numAnswerRaw.toFixed(6);
     document.querySelector(".calc-screen").innerText = numAnswer;
   }
 
   else if (operation === "x") {
-    numAnswer = num1 * num2;
+    numAnswerRaw = num1 * num2;
+    numAnswer = numAnswerRaw.toFixed(6);
     document.querySelector(".calc-screen").innerText = numAnswer;
   }
 
   else if (operation === "/") {
-    numAnswer = num1 / num2;
+    numAnswerRaw = num1 / num2;
+    numAnswer = numAnswerRaw.toFixed(6);
     document.querySelector(".calc-screen").innerText = numAnswer;
   }
 
