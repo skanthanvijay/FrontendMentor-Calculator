@@ -17,8 +17,9 @@ function addToScreen(number) {
   var screenNumberOld = document.querySelector(".calc-screen").innerText;
   var decimalPoints = screenNumberOld.split('.').length - 1;
   var leadingNum = screenNumberOld.charAt(0);
+  var numCount = screenNumberOld.length;
 
-  if (decimalPoints < 1 || number !== ".") {
+  if (decimalPoints < 1 && numCount < 8 || number !== "." && numCount < 8) {
 
     if (leadingNum === "0" && number !== "." && screenNumberOld.charAt(1) !== ".") {
       document.querySelector(".calc-screen").innerText = number;
