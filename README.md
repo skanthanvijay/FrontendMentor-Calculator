@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Link]()
-- Live Site URL: [Site Link]()
+- Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/basic-calculator-made-using-vanilla-jscsshtml-2-kf7BR7C)
+- Live Site URL: [Site Link](https://skanthanvijay.github.io/FrontendMentor-Calculator-App/)
 
 ## My process
 
