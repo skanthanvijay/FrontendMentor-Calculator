@@ -63,7 +63,7 @@ function toggleTheme1() {
 
 
   for (let w of wButton) {
-  w.classList.add("calc-text1-t1", "wB-t1");
+  w.classList.add("wB-t1");
   w.classList.remove("calc-text1-t1", "wB-t2");
   w.classList.remove("wB-t3");}
 
@@ -105,7 +105,7 @@ function toggleTheme2() {
 
 
   for (let w of wButton) {
-  w.classList.remove("calc-text1-t1", "wB-t1");
+  w.classList.remove("wB-t1");
   w.classList.remove("wB-t3");
   w.classList.add("calc-text1-t1", "wB-t2");}
 
@@ -147,7 +147,7 @@ function toggleTheme3() {
 
 
   for (let w of wButton) {
-  w.classList.remove("calc-text1-t1", "wB-t1");
+  w.classList.remove("wB-t1");
   w.classList.remove("calc-text1-t1", "wB-t2");
   w.classList.add("wB-t3");}
 
